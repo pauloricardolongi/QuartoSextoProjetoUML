@@ -1,14 +1,15 @@
 package aplicacao;
 
-import entidades.Produto;
+import entidades.ProdutoImportado;
 
 public class Programa {
 
 	public static void main(String[] args) {
-		Produto p = new Produto("TV", 1000.00);
 		
-		System.out.println(p);
-
+		ProdutoImportado pi = new ProdutoImportado("Tablet", 260.00,20.00);
+		
+		
+		System.out.println(pi.etiquetaPreco());
 	}
 
 }
